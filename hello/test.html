@@ -1,0 +1,14 @@
+<html>
+<head>
+    <script src="socket.io/socket.io.js"></script>
+</head>
+<body>
+    WebSocket Example
+    <script>
+        var socket = io.connect('http://localhost:3000');
+        socket.on('channel', function (data) {
+            console.log('received:' + data);
+        });
+    </script>
+    </body>
+</html>
