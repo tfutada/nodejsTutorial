@@ -12,6 +12,6 @@ var server = http.createServer(function (req, res) {
 });
 
 socket.listen(server).on('connection', function (socket) {
-    socket.broadcast.emit('channel', {myName: 'Futada'});
+    socket.broadcast.emit('channel', {name: 'Futada'});
 });
 
