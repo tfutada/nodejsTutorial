@@ -7,8 +7,8 @@ var getClosure = function() {
 };
 
 // Invoking an API
-var f = getClosure();
-var new_f = getClosure();
+var f = getClosure(); // returns a function along with a counter.
+var new_f = getClosure(); // gets another one.
 
 console.log("f():" + f()); // 0
 console.log("f():" + f()); // 1
